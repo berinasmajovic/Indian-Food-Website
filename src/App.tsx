@@ -9,8 +9,8 @@ function App() {
       <header className="App-header">
         <NavigationBar />
         <ImagesCarousel />
-        
       </header>
+      
     </div>
   );
 }
