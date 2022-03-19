@@ -2,9 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-export interface Props { 
-    icon: IconProp,
-    content: any
+export interface Props {
+  icon: IconProp;
+  content: any;
+  label: string;
 }
 export interface State {}
 
@@ -19,19 +20,30 @@ export default class InfoBox extends Component<Props, State> {
     return (
       <div
         className="box has-text-light"
-        style={{ margin: 10, backgroundColor: "rgba(255, 255, 255, 0.4)", padding: 10 }}
+        style={{
+          margin: 10,
+          backgroundColor: "rgba(255, 255, 255, 0.4)",
+          padding: 10,
+          color: "white",
+          fontWeight: 400,
+          fontSize: "14px",
+          textAlign: "left",
+        }}
       >
         <div className="columns is-vcentered">
-          <div className="column is-1">
-            <span className="icon is-large fa-xl">
+          <div className="column is-2" style={{ margin: "10px" }}>
+            <span className="icon is-large fa-2xl">
               <FontAwesomeIcon icon={this.props.icon} />
             </span>
           </div>
-          <div
-            className="column"
-            style={{ fontFamily: "Libre Caslon Text", color: "white", fontWeight: 400, fontSize: "14px" }}
-          >
-            <span>{this.props.content}</span>
+          <div className="column">
+            <span>
+              <label style={{ fontSize: "10px" }}>{this.props.label}</label>
+            </span>
+            <br></br>
+            <span style={{ fontFamily: "Libre Caslon Text" }}>
+              {this.props.content}
+            </span>
           </div>
         </div>
       </div>

@@ -26,20 +26,34 @@ export default class InfoRow extends Component {
           <InfoBox
             icon={faClock}
             content={
-              <ActionButton
-                label={"BESTÄLL TAKEAWAY"}
-                icon={faBasketShopping}
-              />
+              <div className="select">
+                <select
+                  style={{
+                    backgroundColor: "#CAAB2A",
+                    borderColor: "white",
+                    fontFamily: "Libre Caslon Text",
+                    color: "black",
+                    marginRight: 5,
+                    fontSize: "14px",
+                  }}
+                >
+                  <option>IDAG: 08:00 - 16:00</option>
+                  <option>IDAG: 08:00 - 16:00</option>
+                </select>
+              </div>
             }
+            label={"ÖPPETTIDER"}
           />
           <InfoBox
             icon={faLocationDot}
             content={
-              <ActionButton
-                label={"BESTÄLL TAKEAWAY"}
-                icon={faBasketShopping}
-              />
+              <>
+                <label>{"Drabantvägen 4, 194 33"}</label>
+                <br></br>
+                <label>{"Upplands Väsby, Sverige"}</label>
+              </>
             }
+            label={"ADRESS"}
           />
           <InfoBox
             icon={faUtensils}
@@ -49,6 +63,7 @@ export default class InfoRow extends Component {
                 icon={faBasketShopping}
               />
             }
+            label={"TAKEAWAY?"}
           />
         </div>
       </div>

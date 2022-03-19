@@ -19,15 +19,20 @@ export default class ActionButton extends Component<Props, State> {
     return (
       <div>
         <div
-          className="column"
+          
           style={{ fontFamily: "Libre Caslon Text", color: "white" }}
         >
           <span>
             <button
-              className="button is-warning"
-              style={{ fontFamily: "Libre Caslon Text", color: "black", marginRight: 5 }}
+              className="button"
+              style={{
+                fontFamily: "Libre Caslon Text",
+                color: "black",
+                marginRight: 5,
+                backgroundColor: "#CAAB2A",
+              }}
             >
-              <span className="icon is-large" style={{marginRight: 5}}>
+              <span className="icon is-large" style={{ marginRight: 5 }}>
                 <FontAwesomeIcon icon={this.props.icon} />
               </span>
               {this.props.label}
