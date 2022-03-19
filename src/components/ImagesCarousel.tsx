@@ -3,6 +3,7 @@ import background from "../assets/navigation-background-image.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/CustomIndicator.css";
+import TitleContainer from "./TitleContainer";
 
 export default class ImagesCarousel extends Component {
   render() {

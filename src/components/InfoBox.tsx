@@ -27,7 +27,6 @@ export default class InfoBox extends Component<Props, State> {
           color: "white",
           fontWeight: 400,
           fontSize: "14px",
-          textAlign: "left",
         }}
       >
         <div className="columns is-vcentered">
@@ -36,9 +35,11 @@ export default class InfoBox extends Component<Props, State> {
               <FontAwesomeIcon icon={this.props.icon} />
             </span>
           </div>
-          <div className="column">
+          <div className="column" style={{textAlign: "left"}}>
             <span>
-              <label style={{ fontSize: "10px" }}>{this.props.label}</label>
+              <label style={{ fontSize: "10px" }}>
+                {this.props.label}
+              </label>
             </span>
             <br></br>
             <span style={{ fontFamily: "Libre Caslon Text" }}>

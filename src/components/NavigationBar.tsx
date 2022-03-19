@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../assets/logo.png";
+import TitleContainer from "./TitleContainer";
 
 export default class NavigationBar extends Component<
   {},
@@ -21,16 +22,22 @@ export default class NavigationBar extends Component<
       margin: 20,
     };
     return (
-     
-        <nav className="level" style={{width: "100%", position: "absolute"}}>
+      <>
+        <nav className="level" style={{ width: "100%", position: "absolute" }}>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>HOME</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              HOME
+            </a>
           </p>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>GALLERY</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              GALLERY
+            </a>
           </p>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>RESTAURANTS</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              RESTAURANTS
+            </a>
           </p>
           <p className="level-item has-text-centered">
             <img
@@ -41,15 +48,22 @@ export default class NavigationBar extends Component<
             />
           </p>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>HISTORY</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              HISTORY
+            </a>
           </p>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>ABOUT US</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              ABOUT US
+            </a>
           </p>
           <p className="level-item has-text-centered">
-            <a className="link is-info" style={navbarItemStyle}>CONTACT</a>
+            <a className="link is-info" style={navbarItemStyle}>
+              CONTACT
+            </a>
           </p>
         </nav>
+      </>
     );
   }
 }

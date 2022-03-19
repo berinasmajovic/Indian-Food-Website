@@ -16,7 +16,7 @@ export default class InfoRow extends Component {
         style={{
           position: "absolute",
           width: "100%",
-          marginTop: 540,
+          marginTop: 10,
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
