@@ -1,0 +1,7 @@
+.carousel .control-dots {
+  margin-bottom: 80px;
+}
+.carousel .control-dots .dot {
+  width: 13px;
+  height: 13px;
+}

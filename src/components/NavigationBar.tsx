@@ -21,60 +21,35 @@ export default class NavigationBar extends Component<
       margin: 20,
     };
     return (
-      <div
-        className="container"
-        style={{
-          justifyContent: "center",
-          position: "absolute",
-          width: "100%"
-        }}
-      >
-        <nav className="navbar is-transparent" style={{ visibility: "hidden" }}>
-          <div className="navbar-brand" style={{ visibility: "visible" }}>
-            <div
-              className="navbar-burger"
-              data-target="navbarExampleTransparentExample"
-              onClick={this.toggleNav}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div
-            id="navbarExampleTransparentExample"
-            className={
-              this.state.isActive ? "navbar-menu is-active" : "navbar-menu"
-            }
-            style={{ justifyContent: "center", visibility: "visible" }}
-          >
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              HOME
-            </a>
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              GALLERY
-            </a>
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              RESTAURANTS
-            </a>
+     
+        <nav className="level" style={{width: "100%", position: "absolute"}}>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>HOME</a>
+          </p>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>GALLERY</a>
+          </p>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>RESTAURANTS</a>
+          </p>
+          <p className="level-item has-text-centered">
             <img
               src={logo}
               height={100}
               width={100}
               style={{ margin: "15px 100px" }}
             />
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              HISTORY
-            </a>
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              ABOUT US
-            </a>
-            <a className="navbar-item" href="#" style={navbarItemStyle}>
-              CONTACT
-            </a>
-          </div>
+          </p>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>HISTORY</a>
+          </p>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>ABOUT US</a>
+          </p>
+          <p className="level-item has-text-centered">
+            <a className="link is-info" style={navbarItemStyle}>CONTACT</a>
+          </p>
         </nav>
-      </div>
     );
   }
 }
