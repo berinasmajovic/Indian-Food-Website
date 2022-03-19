@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React, { Component } from "react";
 import logo from "../assets/logo.png";
 
@@ -19,30 +18,35 @@ export default class NavigationBar extends Component<
     const navbarItemStyle = {
       fontFamily: "Libre Caslon Text",
       color: "white",
-      margin: 30,
+      margin: 20,
     };
     return (
-      <nav className="navbar is-transparent" style={{ visibility: "hidden" }}>
-        <div className="navbar-brand" style={{ visibility: "visible" }}>
-          <div
-            className="navbar-burger"
-            data-target="navbarExampleTransparentExample"
-            onClick={this.toggleNav}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
+      <div
+        className="container"
+        style={{
+          justifyContent: "center",
+          position: "absolute",
+          width: "100%"
+        }}
+      >
+        <nav className="navbar is-transparent" style={{ visibility: "hidden" }}>
+          <div className="navbar-brand" style={{ visibility: "visible" }}>
+            <div
+              className="navbar-burger"
+              data-target="navbarExampleTransparentExample"
+              onClick={this.toggleNav}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
-        <div
-          id="navbarExampleTransparentExample"
-          className={
-            this.state.isActive ? "navbar-menu is-active" : "navbar-menu"
-          }
-        >
           <div
-            className="navbar-start"
-            style={{ margin: "0 auto", visibility: "visible" }}
+            id="navbarExampleTransparentExample"
+            className={
+              this.state.isActive ? "navbar-menu is-active" : "navbar-menu"
+            }
+            style={{ justifyContent: "center", visibility: "visible" }}
           >
             <a className="navbar-item" href="#" style={navbarItemStyle}>
               HOME
@@ -69,8 +73,8 @@ export default class NavigationBar extends Component<
               CONTACT
             </a>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     );
   }
 }

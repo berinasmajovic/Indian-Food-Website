@@ -1,16 +1,11 @@
 import React from "react";
 import "./App.css";
-import ImagesCarousel from "./components/ImagesCarousel";
-import NavigationBar from "./components/NavigationBar";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <NavigationBar />
-        <ImagesCarousel />
-      </header>
-      
+        <Homepage/>
     </div>
   );
 }
