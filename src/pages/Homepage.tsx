@@ -14,8 +14,8 @@ export default class Homepage extends Component {
             <ImagesCarousel />
             <NavigationBar />
             <TitleContainer />
+            <InfoRow />
           </div>
-          <InfoRow />
         </section>
       </div>
     );

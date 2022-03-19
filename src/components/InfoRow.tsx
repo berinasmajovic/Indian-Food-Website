@@ -16,7 +16,7 @@ export default class InfoRow extends Component {
         style={{
           position: "absolute",
           width: "100%",
-          marginTop: 10,
+          marginTop: 160,
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
@@ -47,11 +47,11 @@ export default class InfoRow extends Component {
           <InfoBox
             icon={faLocationDot}
             content={
-              <>
-                <label>{"Drabantvägen 4, 194 33"}</label>
+                <span>
+                Drabantvägen 4, 194 33
                 <br></br>
-                <label>{"Upplands Väsby, Sverige"}</label>
-              </>
+                Upplands Väsby, Sverige
+              </span>
             }
             label={"ADRESS"}
           />
