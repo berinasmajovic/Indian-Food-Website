@@ -4,7 +4,8 @@ import React, { Component } from "react";
 
 export interface Props {
   label: string;
-  icon: IconProp;
+  icon?: IconProp;
+  style?: any;
 }
 export interface State {}
 
@@ -18,10 +19,7 @@ export default class ActionButton extends Component<Props, State> {
   render() {
     return (
       <div>
-        <div
-          
-          style={{ fontFamily: "Libre Caslon Text", color: "white" }}
-        >
+        <div style={{ fontFamily: "Libre Caslon Text", color: "white" }}>
           <span>
             <button
               className="button"
@@ -30,11 +28,14 @@ export default class ActionButton extends Component<Props, State> {
                 color: "black",
                 marginRight: 5,
                 backgroundColor: "#CAAB2A",
+                ...this.props.style
               }}
             >
-              <span className="icon is-large" style={{ marginRight: 5 }}>
-                <FontAwesomeIcon icon={this.props.icon} />
-              </span>
+              {this.props.icon && (
+                <span className="icon is-large" style={{ marginRight: 5 }}>
+                  <FontAwesomeIcon icon={this.props.icon} />
+                </span>
+              )}
               {this.props.label}
             </button>
           </span>

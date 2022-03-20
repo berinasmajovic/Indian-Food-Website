@@ -16,10 +16,10 @@ export default class InfoRow extends Component {
         style={{
           position: "absolute",
           width: "100%",
-          marginTop: 160,
+          marginTop: 80,
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "center"
         }}
       >
         <div className="columns">
