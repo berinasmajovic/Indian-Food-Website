@@ -1,9 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export interface Props {
-  icon: IconProp;
+  icon: string;
   content: any;
   label: string;
 }
@@ -32,14 +30,12 @@ export default class InfoBox extends Component<Props, State> {
         <div className="columns is-vcentered">
           <div className="column is-2" style={{ margin: "10px" }}>
             <span className="icon is-large fa-2xl">
-              <FontAwesomeIcon icon={this.props.icon} />
+              <i className={this.props.icon}></i>
             </span>
           </div>
-          <div className="column" style={{textAlign: "left"}}>
+          <div className="column" style={{ textAlign: "left" }}>
             <span>
-              <label style={{ fontSize: "10px" }}>
-                {this.props.label}
-              </label>
+              <label style={{ fontSize: "10px" }}>{this.props.label}</label>
             </span>
             <br></br>
             <span style={{ fontFamily: "Libre Caslon Text" }}>

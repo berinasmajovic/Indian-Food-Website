@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 import InfoBox from "./InfoBox";
-import {
-  faClock,
-  faLocationDot,
-  faUtensils,
-  faBasketShopping,
-} from "@fortawesome/free-solid-svg-icons";
 import ActionButton from "./ActionButton";
 
 export default class InfoRow extends Component {
@@ -19,12 +13,12 @@ export default class InfoRow extends Component {
           marginTop: 80,
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <div className="columns">
           <InfoBox
-            icon={faClock}
+            icon={"fas fa-clock has-text-light"}
             content={
               <div className="select">
                 <select
@@ -45,9 +39,9 @@ export default class InfoRow extends Component {
             label={"ÖPPETTIDER"}
           />
           <InfoBox
-            icon={faLocationDot}
+            icon={"fas fa-location-dot has-text-light"}
             content={
-                <span>
+              <span>
                 Drabantvägen 4, 194 33
                 <br></br>
                 Upplands Väsby, Sverige
@@ -56,11 +50,11 @@ export default class InfoRow extends Component {
             label={"ADRESS"}
           />
           <InfoBox
-            icon={faUtensils}
+            icon={"fas fa-utensils has-text-light"}
             content={
               <ActionButton
                 label={"BESTÄLL TAKEAWAY"}
-                icon={faBasketShopping}
+                icon={"fas fa-basket-shopping has-text-black"}
               />
             }
             label={"TAKEAWAY?"}

@@ -25,7 +25,7 @@ export default class EventCardItem extends Component<Props, State> {
               <img src={this.props.image} alt=""></img>
             </figure>
           </div>
-          <div className="card-content has-background-dark" style={{textAlign: "left"}}>
+          <div className="card-content has-background-black-bis" style={{textAlign: "left"}}>
             <div className="media">
               <div className="media-content">
                 <p

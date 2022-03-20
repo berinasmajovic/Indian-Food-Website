@@ -1,10 +1,8 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 
 export interface Props {
   label: string;
-  icon?: IconProp;
+  icon?: string;
   style?: any;
 }
 export interface State {}
@@ -28,12 +26,12 @@ export default class ActionButton extends Component<Props, State> {
                 color: "black",
                 marginRight: 5,
                 backgroundColor: "#CAAB2A",
-                ...this.props.style
+                ...this.props.style,
               }}
             >
               {this.props.icon && (
                 <span className="icon is-large" style={{ marginRight: 5 }}>
-                  <FontAwesomeIcon icon={this.props.icon} />
+                  <i className={this.props.icon}></i>
                 </span>
               )}
               {this.props.label}
