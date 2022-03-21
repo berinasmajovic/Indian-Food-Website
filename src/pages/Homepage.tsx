@@ -14,17 +14,48 @@ import HistoryCardList from "../components/HistoryCardList";
 import AboutUsContentTable from "../components/AboutUsContentTable";
 import ContactUsForm from "../components/ContactUsForm";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default class Homepage extends Component {
   render() {
     return (
       <div className="container">
         <section className="container">
-          <div className="section-1">
-            <ImagesCarousel />
-            <NavigationBar />
-            <TitleContainer />
-            <InfoRow />
+          <div
+            className="section-1"
+            style={{ position: "relative", width: "100%", height: "100%", marginTop: "3%" }}
+          >
+            <div
+              className="content"
+              style={{ position: "relative", zIndex: 100 }}
+            >
+              <div className="columns">
+                <div className="column">
+                  <Navbar/>
+                </div>
+              </div>
+              <div className="columns is-vcentered">
+                <div className="column">
+                  <TitleContainer />
+                </div>
+              </div>
+              <div className="columns" style={{marginTop: "-45px"}}>
+                <div className="column">
+                  <InfoRow />
+                </div>
+              </div>
+            </div>
+            <div
+              className="background column"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                zIndex: -100
+              }}
+            >
+              <ImagesCarousel />
+            </div>
           </div>
         </section>
         <section className="container">

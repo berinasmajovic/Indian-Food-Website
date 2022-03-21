@@ -8,8 +8,7 @@ import "../styles/CustomIndicator.css";
 export default class ImagesCarousel extends Component {
   render() {
     return (
-      <div style={{position: "absolute"}}>
-        <Carousel showThumbs={false} showStatus={false}>
+        <Carousel showThumbs={false} showStatus={false} showArrows={false} autoPlay infiniteLoop>
           <div>
             <img src={CarouselImage1} />
           </div>
@@ -20,7 +19,6 @@ export default class ImagesCarousel extends Component {
             <img src={CarouselImage1} />
           </div>
         </Carousel>
-      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import lineUp from "../assets/decorative-line-up.png";
-import lineDown from "../assets/decorative-line-down.png";
+import lineDown from "../assets/decorative-line-down-updated.png";
 import "../styles/TitleContainer.css";
 
 export default class TitleContainer extends Component {
@@ -8,20 +8,20 @@ export default class TitleContainer extends Component {
     return (
       <div
         className="container title-container"
-        style={{ width: "60%", paddingTop: 180 }}
+        style={{ width: "60%", justifyContent: "center" }}
       >
         <img src={lineUp} />
-        <h2
+        <div
           style={{
             fontFamily: "Libre Caslon Text",
-            fontSize: "80px",
+            fontSize: "75px",
             fontWeight: 700,
             color: "white",
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
           Best Indian Food in Västerås
-        </h2>
+        </div>
         <img src={lineDown} />
       </div>
     );
