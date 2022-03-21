@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ActionButton from "./ActionButton";
+import ActionButton from "../base/ActionButton";
 
 export interface Props {
   header: string;
@@ -18,7 +18,7 @@ export default class LocationCardItem extends Component<Props, State> {
   }
   render() {
     return (
-      <div className="column" style={{textAlign: "left"}}>
+      <div className="column" style={{ textAlign: "left" }}>
         <div className="card large has-background-black">
           <div className="card-image">
             <figure className="image is-1by4">
@@ -40,9 +40,7 @@ export default class LocationCardItem extends Component<Props, State> {
                 >
                   {this.props.title}
                 </p>
-                <p
-                  className="is-size-7 has-text-grey-light"
-                >
+                <p className="is-size-7 has-text-grey-light">
                   {this.props.description}
                 </p>
               </div>

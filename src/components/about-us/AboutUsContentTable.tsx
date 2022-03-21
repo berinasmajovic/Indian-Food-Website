@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import SubtitleContainer from "./SubtitleContainer";
-import "../styles/HorizontalLine.css";
-import AboutUsImage1 from "../assets/about-us-image-1.png";
-import AboutUsImage2 from "../assets/about-us-image-2.png";
+import SubtitleContainer from "../base/SubtitleContainer";
+import "../../styles/HorizontalLine.css";
+import AboutUsImage1 from "../../assets/about-us-image-1.png";
+import AboutUsImage2 from "../../assets/about-us-image-2.png";
 import AboutUsTextCard from "./AboutUsTextCard";
 
 export default class AboutUsContentTable extends Component {

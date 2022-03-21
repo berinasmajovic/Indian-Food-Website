@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import InfoBox from "./InfoBox";
-import ActionButton from "./ActionButton";
+import ActionButton from "../base/ActionButton";
 
 export default class InfoRow extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class InfoRow extends Component {
           width: "70%",
           marginTop: "105px",
           justifyContent: "center",
-          display: "flex"
+          display: "flex",
         }}
       >
         <div

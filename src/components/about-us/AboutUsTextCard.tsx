@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HistoryHorizontalLine from "./HistoryHorizontalLine";
+import HistoryHorizontalLine from "../history/HistoryHorizontalLine";
 
 export interface Props {
   title: string;

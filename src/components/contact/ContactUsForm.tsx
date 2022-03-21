@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ActionButton from "./ActionButton";
-import InfoBox from "./InfoBox";
+import ActionButton from "../base/ActionButton";
+import InfoBox from "../info/InfoBox";
 
 export default class ContactUsForm extends Component {
   render() {
@@ -30,7 +30,7 @@ export default class ContactUsForm extends Component {
                     </p>
                     <br></br>
                     <div className="columns is-vcentered">
-                        <InfoBox
+                      <InfoBox
                         icon={"fas fa-location-dot has-text-light"}
                         content={
                           <span>
@@ -41,7 +41,6 @@ export default class ContactUsForm extends Component {
                         }
                         label={"ADRESS"}
                       />
-                     
                     </div>
 
                     <div className="columns is-vcentered">

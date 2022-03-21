@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import lineUp from "../assets/decorative-line-up.png";
-import lineDown from "../assets/decorative-line-down-updated.png";
-import "../styles/TitleContainer.css";
+import lineUp from "../../assets/decorative-line-up.png";
+import lineDown from "../../assets/decorative-line-down-updated.png";
+import "../../styles/TitleContainer.css";
 
 export default class TitleContainer extends Component {
   render() {
@@ -10,20 +10,20 @@ export default class TitleContainer extends Component {
         className="container title-container"
         style={{ width: "60%", justifyContent: "center" }}
       >
-        <img src={lineUp} />
+        <img src={lineUp} alt="" />
         <div
-        className="title"
+          className="title"
           style={{
             fontFamily: "Libre Caslon Text",
             fontSize: "75px",
             fontWeight: 700,
             color: "white",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           Best Indian Food in Västerås
         </div>
-        <img src={lineDown} />
+        <img src={lineDown} alt="" />
       </div>
     );
   }

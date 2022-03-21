@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import lineDown from "../assets/decorative-line-down.png";
+import lineDown from "../../assets/decorative-line-down.png";
 
 export interface Props {
   title: string;

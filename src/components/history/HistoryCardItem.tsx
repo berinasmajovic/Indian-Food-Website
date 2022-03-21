@@ -34,9 +34,7 @@ export default class HistoryCardItem extends Component<Props, State> {
                 >
                   {this.props.subtitle}
                 </p>
-                <p
-                  className="is-size-7 has-text-grey-light"
-                >
+                <p className="is-size-7 has-text-grey-light">
                   {this.props.description}
                 </p>
                 <br></br>

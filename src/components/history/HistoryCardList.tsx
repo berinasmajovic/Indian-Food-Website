@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import EventImage1 from "../assets/event-img-1.jpg";
-import EventImage2 from "../assets/event-img-2.jpg";
-import EventImage3 from "../assets/event-img-3.jpg";
-import EventCardItem from "./EventCardItem";
-import SubtitleContainer from "./SubtitleContainer";
+import EventImage1 from "../../assets/event-img-1.jpg";
+import EventImage2 from "../../assets/event-img-2.jpg";
+import EventImage3 from "../../assets/event-img-3.jpg";
+import HistoryCardItem from "./HistoryCardItem";
+import SubtitleContainer from "../base/SubtitleContainer";
+import "../../styles/HorizontalLine.css";
+import HistoryHorizontalLine from "./HistoryHorizontalLine";
 
-export default class EventCardList extends Component {
+export default class HistoryCardList extends Component {
   render() {
     return (
       <div className="container">
@@ -13,49 +15,38 @@ export default class EventCardList extends Component {
           <div className="columns">
             <div className="column has-text-centered">
               <SubtitleContainer
-                title={"Events"}
+                title={"History"}
                 subtitle={
                   "Enim volutpat velit molestie morbi pharetra nam nisi et."
                 }
               />
             </div>
           </div>
+          <HistoryHorizontalLine />
           <div className="columns" style={{ padding: "1" }}>
-            <EventCardItem
-              title={"Libero commodo arcu elementum eget pharetra."}
-              subtitle={"Varje tisdag | 15:00 - 20:00"}
+            <HistoryCardItem
+              title={"OPENING"}
+              subtitle={"2005"}
               description={
                 "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne."
               }
               image={EventImage1}
             />
-            <EventCardItem
-              title={"Ligula molestie pharetra auctor tincidunt id turpis et. "}
-              subtitle={"Varje tisdag | 15:00 - 20:00"}
+            <HistoryCardItem
+              title={"BEGGINING YEARS"}
+              subtitle={"2005 - 2020"}
               description={
                 "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne."
               }
               image={EventImage2}
             />
-            <EventCardItem
-              title={
-                "Pellentesque libero tempor vel nec nulla odio vulputate ut."
-              }
-              subtitle={"Varje tisdag | 15:00 - 20:00"}
+            <HistoryCardItem
+              title={"PRESENT"}
+              subtitle={"2020 - Present"}
               description={
                 "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne."
               }
               image={EventImage3}
-            />
-            <EventCardItem
-              title={
-                "Sed risus at consectetur vitae ut mauris scelerisque nullam."
-              }
-              subtitle={"Varje tisdag | 15:00 - 20:00"}
-              description={
-                "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne."
-              }
-              image={""}
             />
           </div>
         </div>

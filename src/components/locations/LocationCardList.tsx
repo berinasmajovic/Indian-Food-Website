@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import LocationCardItem from "./LocationCardItem";
-import SubtitleContainer from "./SubtitleContainer";
-import LocationImage1 from "../assets/location-card-image-1.png";
-import LocationImage2 from "../assets/location-card-image-2.png";
+import SubtitleContainer from "../base/SubtitleContainer";
+import LocationImage1 from "../../assets/location-card-image-1.png";
+import LocationImage2 from "../../assets/location-card-image-2.png";
 
 export default class LocationCardList extends Component {
   render() {

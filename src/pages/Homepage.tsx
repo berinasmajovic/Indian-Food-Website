@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import ImagesCarousel from "../components/ImagesCarousel";
-import InfoRow from "../components/InfoRow";
-import TitleContainer from "../components/TitleContainer";
+import ImagesCarousel from "../components/images/ImagesCarousel";
+import InfoRow from "../components/info/InfoRow";
+import TitleContainer from "../components/base/TitleContainer";
 import rightSideLine from "../assets/decorative-line-side-right.png";
 import leftSideLine from "../assets/decorative-line-side-left.png";
-import EventCardList from "../components/EventCardList";
-import ImageGrid from "../components/ImageGrid";
-import LocationCardList from "../components/LocationCardList";
-import HistoryCardList from "../components/HistoryCardList";
-import AboutUsContentTable from "../components/AboutUsContentTable";
-import ContactUsForm from "../components/ContactUsForm";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import EventCardList from "../components/events/EventCardList";
+import ImageGrid from "../components/images/ImageGrid";
+import LocationCardList from "../components/locations/LocationCardList";
+import HistoryCardList from "../components/history/HistoryCardList";
+import AboutUsContentTable from "../components/about-us/AboutUsContentTable";
+import ContactUsForm from "../components/contact/ContactUsForm";
+import Footer from "../components/base/Footer";
+import Navbar from "../components/base/Navbar";
 import "../styles/Homepage.css";
 
 export default class Homepage extends Component {
@@ -64,17 +64,17 @@ export default class Homepage extends Component {
         </section>
         <section className="container">
           <div className="section-2 columns">
-              <img
-                className="side-image"
-                src={leftSideLine}
-                style={{ marginTop: "15%" }}
-              />
+            <img
+              className="side-image"
+              src={leftSideLine}
+              style={{ marginTop: "15%" }}
+            />
             <EventCardList />
-              <img
-                className="side-image"
-                src={rightSideLine}
-                style={{ marginTop: "15%" }}
-              />
+            <img
+              className="side-image"
+              src={rightSideLine}
+              style={{ marginTop: "15%" }}
+            />
           </div>
         </section>
         <section id="gallery" className="container">

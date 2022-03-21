@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import { Carousel } from "react-responsive-carousel";
-import GalleryImage1 from "../assets/gallery-image-1.png";
-import GalleryImage2 from "../assets/gallery-image-2.png";
-import GalleryImage3 from "../assets/gallery-image-3.png";
-import GalleryImage4 from "../assets/gallery-image-4.png";
-import GalleryImage5 from "../assets/gallery-image-5.png";
-import GalleryImage6 from "../assets/gallery-image-6.png";
+import GalleryImage1 from "../../assets/gallery-image-1.png";
+import GalleryImage2 from "../../assets/gallery-image-2.png";
+import GalleryImage3 from "../../assets/gallery-image-3.png";
+import GalleryImage4 from "../../assets/gallery-image-4.png";
+import GalleryImage5 from "../../assets/gallery-image-5.png";
+import GalleryImage6 from "../../assets/gallery-image-6.png";
 
 export default class ImageGrid extends Component {
   render() {
