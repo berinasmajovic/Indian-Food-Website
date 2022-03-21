@@ -41,8 +41,7 @@ export default class LocationCardItem extends Component<Props, State> {
                   {this.props.title}
                 </p>
                 <p
-                  className="is-size-6 has-text-grey-light"
-                  style={{ fontFamily: "Libre Caslon Text" }}
+                  className="is-size-7 has-text-grey-light"
                 >
                   {this.props.description}
                 </p>

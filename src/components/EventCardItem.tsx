@@ -42,8 +42,7 @@ export default class EventCardItem extends Component<Props, State> {
                 </p>
                 <hr />
                 <p
-                  className="is-size-6 has-text-grey-light"
-                  style={{ fontFamily: "Libre Caslon Text" }}
+                  className="is-size-7 has-text-grey-light"
                 >
                   {this.props.description}
                 </p>

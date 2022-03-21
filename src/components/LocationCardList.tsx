@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import LocationCardItem from "./LocationCardItem";
 import SubtitleContainer from "./SubtitleContainer";
-import Location1 from "../assets/location-card-image-1.png";
-import Location2 from "../assets/location-card-image-2.png";
+import LocationImage1 from "../assets/location-card-image-1.png";
+import LocationImage2 from "../assets/location-card-image-2.png";
 
 export default class LocationCardList extends Component {
   render() {
@@ -26,7 +26,7 @@ export default class LocationCardList extends Component {
               description={
                 "Cum pellentesque nisi sit facilisi suspendisse. Aliquet egestas at morbi ultricies euismod scelerisque. Malesuada rhoncus feugiat gravida adipiscing."
               }
-              image={Location1}
+              image={LocationImage1}
             />
             <LocationCardItem
               header={"RESTAURANT"}
@@ -34,7 +34,7 @@ export default class LocationCardList extends Component {
               description={
                 "Ante a lacus, amet proin. Auctor turpis fermentum posuere tortor, diam sit cursus sit. Porttitor felis facilisis est amet, adipiscing vitae. Ac justo, convallis sed."
               }
-              image={Location2}
+              image={LocationImage2}
             />
           </div>
         </div>

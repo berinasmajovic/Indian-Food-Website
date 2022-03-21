@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export interface Props {
   icon: string;
   content: any;
-  label: string;
+  label?: string;
 }
 export interface State {}
 
@@ -25,6 +25,7 @@ export default class InfoBox extends Component<Props, State> {
           color: "white",
           fontWeight: 400,
           fontSize: "14px",
+          width: "70%",
         }}
       >
         <div className="columns is-vcentered">
@@ -34,10 +35,15 @@ export default class InfoBox extends Component<Props, State> {
             </span>
           </div>
           <div className="column" style={{ textAlign: "left" }}>
-            <span>
-              <label style={{ fontSize: "10px" }}>{this.props.label}</label>
-            </span>
-            <br></br>
+            {this.props.label && (
+              <>
+                <span>
+                  <label style={{ fontSize: "10px" }}>{this.props.label}</label>
+                </span>
+                <br></br>
+              </>
+            )}
+
             <span style={{ fontFamily: "Libre Caslon Text" }}>
               {this.props.content}
             </span>

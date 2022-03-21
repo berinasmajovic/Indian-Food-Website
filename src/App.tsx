@@ -1,13 +1,15 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import InfoBox from "./components/InfoBox";
 import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Homepage />
+      </div>
+    </BrowserRouter>
   );
 }
 
