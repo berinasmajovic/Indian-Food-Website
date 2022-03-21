@@ -22,7 +22,7 @@ export default class Navbar extends Component<{}, { isActive: boolean }> {
     };
     return (
       <nav
-        className="navbar"
+        className="level"
         role="navigation"
         aria-label="main navigation"
         style={{ background: "rgba(76, 175, 80, 0)" }}

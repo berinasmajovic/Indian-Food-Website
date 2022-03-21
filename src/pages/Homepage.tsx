@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import ImagesCarousel from "../components/ImagesCarousel";
 import InfoRow from "../components/InfoRow";
-import NavigationBar from "../components/NavigationBar";
 import TitleContainer from "../components/TitleContainer";
 import rightSideLine from "../assets/decorative-line-side-right.png";
 import leftSideLine from "../assets/decorative-line-side-left.png";
