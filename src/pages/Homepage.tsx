@@ -5,7 +5,6 @@ import InfoRow from "../components/InfoRow";
 import TitleContainer from "../components/TitleContainer";
 import rightSideLine from "../assets/decorative-line-side-right.png";
 import leftSideLine from "../assets/decorative-line-side-left.png";
-import "../styles/SideImage.css";
 import EventCardList from "../components/EventCardList";
 import ImageGrid from "../components/ImageGrid";
 import LocationCardList from "../components/LocationCardList";
@@ -14,6 +13,7 @@ import AboutUsContentTable from "../components/AboutUsContentTable";
 import ContactUsForm from "../components/ContactUsForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import "../styles/Homepage.css";
 
 export default class Homepage extends Component {
   render() {
@@ -22,7 +22,12 @@ export default class Homepage extends Component {
         <section className="container">
           <div
             className="section-1"
-            style={{ position: "relative", width: "100%", height: "100%", marginTop: "3%" }}
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "100%",
+              marginTop: "3%",
+            }}
           >
             <div
               className="content"
@@ -30,7 +35,7 @@ export default class Homepage extends Component {
             >
               <div className="columns">
                 <div className="column">
-                  <Navbar/>
+                  <Navbar />
                 </div>
               </div>
               <div className="columns is-vcentered">
@@ -38,7 +43,7 @@ export default class Homepage extends Component {
                   <TitleContainer />
                 </div>
               </div>
-              <div className="columns" style={{marginTop: "-45px"}}>
+              <div className="columns is-vcentered">
                 <div className="column">
                   <InfoRow />
                 </div>
@@ -50,7 +55,7 @@ export default class Homepage extends Component {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                zIndex: -100
+                zIndex: -100,
               }}
             >
               <ImagesCarousel />
@@ -58,18 +63,18 @@ export default class Homepage extends Component {
           </div>
         </section>
         <section className="container">
-          <div className="section-2 columns" style={{ marginTop: "15%" }}>
-            <img
-              className="side-image"
-              src={leftSideLine}
-              style={{ marginTop: "15%" }}
-            />
+          <div className="section-2 columns">
+              <img
+                className="side-image"
+                src={leftSideLine}
+                style={{ marginTop: "15%" }}
+              />
             <EventCardList />
-            <img
-              className="side-image"
-              src={rightSideLine}
-              style={{ marginTop: "15%" }}
-            />
+              <img
+                className="side-image"
+                src={rightSideLine}
+                style={{ marginTop: "15%" }}
+              />
           </div>
         </section>
         <section id="gallery" className="container">

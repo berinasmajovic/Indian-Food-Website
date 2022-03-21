@@ -1,0 +1,7 @@
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: black;
+        box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+        padding: 0.5rem 0;
+    }
+}

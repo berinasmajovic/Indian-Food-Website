@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import LogoImage from "../assets/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
+import "../styles/Navbar.css";
 
 export default class Navbar extends Component<{}, { isActive: boolean }> {
   state = {
@@ -22,12 +23,12 @@ export default class Navbar extends Component<{}, { isActive: boolean }> {
     };
     return (
       <nav
-        className="level"
+        className="navbar"
         role="navigation"
         aria-label="main navigation"
         style={{ background: "rgba(76, 175, 80, 0)" }}
       >
-        <div className="navbar-brand">
+        <div className="navbar-brand" style={{backgroundColor: "black", color: "white"}}>
           <a
             onClick={() => {
               this.toggleNav();
@@ -100,7 +101,7 @@ export default class Navbar extends Component<{}, { isActive: boolean }> {
               ABOUT US
             </Link>
           </p>
-          <p className="has-text-centered">
+          <p className="has-text-centered" style={{marginBottom: "1rem"}}>
             <Link
               to="#contact"
               className="link is-info"

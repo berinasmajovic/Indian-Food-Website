@@ -25,7 +25,7 @@ export default class InfoBox extends Component<Props, State> {
           color: "white",
           fontWeight: 400,
           fontSize: "14px",
-          width: "70%",
+          width: "100%"
         }}
       >
         <div className="columns is-vcentered">

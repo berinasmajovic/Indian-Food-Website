@@ -1,0 +1,11 @@
+@media screen and (max-width: 1218px) {
+    .side-image {
+       display: none;
+    }
+  }
+
+  @media screen and (max-width: 1218px) {
+    .gallery {
+       display: none;
+    }
+  }

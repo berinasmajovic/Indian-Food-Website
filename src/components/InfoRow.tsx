@@ -8,15 +8,16 @@ export default class InfoRow extends Component {
       <div
         className="container"
         style={{
-          position: "absolute",
-          width: "100%",
-          marginTop: 80,
-          display: "flex",
-          flexDirection: "row",
+          width: "70%",
+          marginTop: "105px",
           justifyContent: "center",
+          display: "flex"
         }}
       >
-        <div className="columns">
+        <div
+          className="columns is-vcentered"
+          style={{ justifyContent: "center" }}
+        >
           <InfoBox
             icon={"fas fa-clock has-text-light"}
             content={

@@ -12,6 +12,7 @@ export default class TitleContainer extends Component {
       >
         <img src={lineUp} />
         <div
+        className="title"
           style={{
             fontFamily: "Libre Caslon Text",
             fontSize: "75px",
